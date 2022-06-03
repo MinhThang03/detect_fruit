@@ -1,6 +1,6 @@
 import cv2
 
-from PIL import Image, ImageFont, ImageDraw 
+from PIL import Image, ImageFont, ImageDraw
 
 from utils_yolov5.utils_yolov5 import yolov5_charaters_init
 
