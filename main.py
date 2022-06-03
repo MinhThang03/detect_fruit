@@ -23,9 +23,9 @@ def draw_predict(pathImg, predict):
 
 
 
-weight = "model/fruits.pt"
+weight = "model/fruit_v3.pt"
 model = yolov5_charaters_init(weight_path=weight, device="cpu")
-pathImg = r'static\img_to_test\1.jpg'
+pathImg = 'static/img_to_test/CaTim/timg2.jpeg'
 img = cv2.imread(pathImg) 
 result = model.predictJson(img)
 predict = result["predictions"]

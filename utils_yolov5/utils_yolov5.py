@@ -33,7 +33,7 @@ class Yolov5_detection_charaters(nn.Module):
     def predictJson(self, images,threshold=0.5):
         # vocab = ["Apple","Avocado","Banana","Eggplant","Grapefruit","Guava","Lemon","Lychee","Mandarine","Mango","Melon","Orange","Papaya","Pear","Pineapple","Pitahaya","Plum","Pomegranate","Potato","Rambutan","Strawberry","Tomato"]
         # vocab = ["Táo", "Bơ", "Chuối", "Cà tím", "Bưởi", "Ổi", "Chanh", "Vải thiều", "Mandarine", "Xoài", "Dưa", "Cam", " Đu đủ "," Lê "," Dứa "," Pitahaya "," Mận "," Lựu "," Khoai tây "," Chôm chôm "," Dâu tây "," Cà chua "]
-        vocal = self.names
+        vocab = self.names
         images = [images[..., ::-1]]
         pred = self.model(images)
         result = {}
